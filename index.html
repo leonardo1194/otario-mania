@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtarioMania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OtarioMania</h1>
+            <nav>
+                <ul>
+                    <li>Jogos favoritos</li>
+                    <li>Boletim</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container saldo">
+            <form id="form-saldo">
+                <h2>Saldo atual: <span id="exibe-saldo">R$0,00</span></h2>
+                <h3>Investimento atual: <span id="exibe-investimento">R$0,00</span></h3>
+                <label for="add-saldo">Adicionar mais saldo: </label>
+                <input type="number" id="add-saldo" required>
+                <button type="submit">Adicionar Saldo</button>
+            </form>
+        </div>
+
+        <div class="container resultado" id="resultado">
+                <h3 class="ganhou perdeu" >Resultado</h3>
+                <p>Total ganho no jogo: R$0,00</p>
+        </div>
+
+        <div class="container aposta">
+            <form id="form-aposta">
+                <input type="number" id="input-aposta" placeholder="Quanto quer apostar?" required>
+                <button type="submit">Apostar</button>
+            </form>
+        </div>
+    </main>
+    <script src="aposta.js"></script>
+</body>
+</html>
