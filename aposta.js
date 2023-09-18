@@ -77,8 +77,8 @@ function exibeResultadoAposta() {
 
     document.getElementById('resultado').innerHTML = resultadoAposta === true ? h3Ganhou : h3Perdeu
     document.getElementById('resultado').innerHTML += `<p>Total ganho no jogo: ${ganhos.toFixed(2)}</p>`
-    //document.getElementById('resultado').innerHTML += `<p>${num1}, ${num2}</p>`
-    //document.getElementById('resultado').innerHTML += `<p>${resultadoAposta}</p>`
+    document.getElementById('resultado').innerHTML += `<p>Número sorteado: ${num1.toFixed(2)}</p>`
+    document.getElementById('resultado').innerHTML += `<p>Apostas feitas: ${quantidadeAposta}</p>`
 }
 
 function contaAposta() {
