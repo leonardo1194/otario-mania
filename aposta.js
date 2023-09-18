@@ -59,9 +59,12 @@ function realizaAposta() {
         alert('Não pode apostar mais do que tem, ladrão!')
     } else {
         num1 = Math.random()
-        num2 = Math.random()
 
-        resultadoAposta = num1 <= 0.75 && num2 <= 0.75
+        if (num1 <= 0.5) {
+            resultadoAposta = true
+        } else {
+            resultadoAposta = false
+        }
         
         contaAposta()
         exibeResultadoAposta()

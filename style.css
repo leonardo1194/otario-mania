@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #eee;
 }
 
 header .container {
@@ -27,10 +28,6 @@ header li {
     display: inline;
     padding-left: 24px;
     text-transform: uppercase;
-}
-
-main .container {
-    background-color: #eee;
 }
 
 form input,
